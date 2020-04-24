@@ -1,0 +1,153 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    min-height: 600px;
+}
+nav{
+    width: 100vw;
+    height: 60px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 11111;
+}
+.main-div{
+    position: relative;
+    float: left;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+#person-img{
+    height: 60px;
+    display: flex;
+    margin-right: 20px;
+}
+#person-img img{
+    align-self: center;
+    height: 30px;
+    border-radius: 50%;
+}
+#grip-botton a i{
+    margin-right: 20px;
+    color: gray;
+}
+#images-word a ,#gmail-word a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: gray;
+}
+.logo-img{
+    height: 300px;
+    width: 500px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.logo-img img{
+    width: 500px;
+    height: 300px;
+}
+.search-box{
+    position: absolute;
+    top: 50%;
+    width: 600px;
+    height: 40px;
+    border-radius: 30px;
+    border-style: none;
+    left: calc(50% - 300px);
+    display: flex;
+    flex-direction: row-reverse;
+    box-shadow: 0 1px 6px 0 gray;
+    cursor: text;
+    overflow: hidden;
+}
+.search-box #search-icon{
+    margin-right: 20px;
+    align-self: center;
+    font-size: 20px;
+    z-index: 1111;
+}
+.search-box input{
+    left: 0px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    line-height: 40px;
+    color: gray;
+    padding-left: 30px;
+    margin: 0px -40px 0px 0px;
+}
+.search-box #microphone-icon{
+    margin-left: 20px;
+    align-self: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+.liked-pages{
+    position: absolute;
+    width: 400px;
+    height: 100px;
+    top: 70%;
+    left: calc(50% - 200px);
+    /*transform: translate(-30%, -50%);*/
+    z-index: 150000;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.liked-pages #liked-pages1, #liked-pages2, #liked-pages3, #liked-pages4{
+    min-width: 95px;
+    flex-basis: 23%;
+    text-align: center;
+    height: 95px;
+    cursor: pointer;
+}
+.liked-pages #liked-pages1:hover, #liked-pages2:hover, #liked-pages3:hover, #liked-pages4:hover{
+    border: 1px solid rgb(161, 161, 161);
+    border-radius: 5px;
+}
+#page-image{
+    position: relative;
+    top: 15%;
+    left: calc(50% - 20px);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: gray;
+    z-index: 1555;
+}
+#page-name{
+    position: relative;
+    top: 22%;
+    left: calc(50% - 30px);
+    width: 60px;
+    height: 20px;
+    background-color: white;
+    z-index: 1555;
+}
+@media screen and (max-width: 730px){
+    .logo-img img{
+        position: relative;
+        width: 333px;
+        height: 200px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .search-box{
+        width: 400px;
+        left: calc(50% - 200px);
+    }
+    .liked-pages{
+        width: 200px;
+        height: 200px;
+        top: 70%;
+        left: calc(50% - 100px);
+    }
+}
